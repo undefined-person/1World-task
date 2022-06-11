@@ -1,0 +1,86 @@
+.table {
+  height: 80vh;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.table__header {
+  align-items: center;
+  background: var(--primary);
+  display: flex;
+  padding: 2rem;
+  width: 100%;
+}
+
+.table-row {
+  color: var(--black);
+  cursor: pointer;
+  display: flex;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.delete__btn {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 6px;
+  color: var(--white);
+  cursor: pointer;
+  display: none;
+  padding: 0.5rem;
+  position: absolute;
+  right: 10px;
+  z-index: 6;
+}
+
+.table-row:hover .delete__btn {
+  display: block;
+}
+
+.table-data,
+.header__item {
+  flex: 1 1 20%;
+  text-align: center;
+  word-break: break-all;
+}
+
+.header__item {
+  cursor: pointer;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.header__item::after {
+  content: "";
+  font-size: 1rem;
+  position: absolute;
+  right: 2rem;
+}
+
+.header__item[data-order="desc"]::after {
+  content: "⮝";
+}
+
+.header__item[data-order="asc"]::after {
+  content: "⮟";
+}
+
+.table-row:nth-of-type(even) {
+  background: var(--ligntBlue);
+}
+
+.top__btn {
+  background-color: var(--ligntBlue);
+  cursor: pointer;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: center;
+  padding: 1rem;
+  transition: all 0.6s;
+  width: 100%;
+}
+
+.top__btn:hover {
+  background-color: var(--primary);
+}

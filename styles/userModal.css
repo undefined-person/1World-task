@@ -1,0 +1,36 @@
+.input_wrapper {
+  display: inline-block;
+  margin: 0.8rem 0;
+  position: relative;
+}
+
+.user_input {
+  border: 0;
+  border-bottom: 1px solid var(--ligntBlue);
+  color: var(--primary);
+  font-weight: 400;
+  margin: 0.3rem 0;
+  outline: 0;
+  padding: 0.4rem 0.2rem;
+  transition: all 0.5s;
+}
+
+.user_input:focus,
+.user_input:active {
+  border-bottom: 1px solid var(--primary);
+}
+
+.add_btn {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+
+.userForm {
+  display: flex;
+  flex-direction: column;
+}

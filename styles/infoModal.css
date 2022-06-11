@@ -1,0 +1,15 @@
+.info-modal__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-modal__title {
+  color: var(--primary);
+  font-weight: bold;
+  margin: 0 1rem 0 0;
+}
+
+.info-modal__info {
+  color: var(--black);
+  font-size: 14px;
+}
